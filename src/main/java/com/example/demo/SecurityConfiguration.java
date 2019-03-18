@@ -58,7 +58,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                         new AntPathRequestMatcher("/logout"))
                 .logoutSuccessUrl("/login").permitAll()
 
-                // new addition in 4.04
                 .and()
                 .httpBasic();
 
